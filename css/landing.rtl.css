@@ -1,3 +1,5 @@
+/* Mobin Malek (c) */
+
 /* Default Settings */
 
 :root {
@@ -28,6 +30,7 @@
 }
 
 body {
+    width: 100%;
     transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
@@ -186,6 +189,9 @@ nav #signUp:hover {
     background-color: var(--primary-blue);
     color: white;
 }
+nav #nav_logo_small{
+    display: none;
+}
 
 
 /* Header */
@@ -339,26 +345,7 @@ header section a:hover>#header_arrow {
     filter: invert(100%);
 }
 
-/* Header On Smaller Devices */
-@media screen and (max-width:960px) {
-    header{
-        text-align: center;
-        width: 100%;
-        margin-top: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-.swiper {
-    border-radius: 2em;
-    width: 560px !important;
-    height: 330px !important;
-    margin-top: 80px;
-     background-color: red ;
-}
-}
+
 /* Courses */
 
 .courses {
@@ -929,8 +916,9 @@ footer #logo img{
 /* -------------------------------- */
 /* Mobile Styles */
 
-/* *Navagation* */
+
 @media screen and (max-width:850px) {
+    /* *Navagation* */
     nav {
         height: 90px;
     }
@@ -942,18 +930,235 @@ footer #logo img{
     }
     nav .search{
         margin: 0;
+        width: 47%;
+        margin-left: 0;
+    }
+    nav #nav_logo_small{
+        display: block;
     }
     nav #signUp{
-        margin-right: -25px;
+        display: none;
     }
     nav #mode{
-        margin-right: 25px;
+        margin-right: 0;
     }
     nav #hamber{
         margin-left: -20px;
-        margin-right: -10px;
+        margin-right: -5px;
     }
     html , body{
         width: 100%;
+    }
+
+
+    /* Header */
+    header{
+        text-align: center;
+        width: 100%;
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .swiper {
+        
+        border-radius: 2em;
+        width: 80% !important;
+        height: 280px !important;
+        margin-top: 80px;
+        background-color: red ;
+    }
+    header section{
+        margin: 0;
+        direction: rtl;
+        width: 90%;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    header section h1{
+        font-size: 42px;
+    }
+    header section sub{
+        font-size: 14px;
+    }
+    header section a{
+        width: 5em;
+        font-size: 14px;
+    }
+
+    .courses #head h2{
+       font-size: 22px;
+    }
+    .course #head #see_more{
+        margin-left: 2px !important; 
+        opacity: 0.8;
+        height: 46px;
+        border-radius: 12px;
+    }
+    .courses #head #see_more h3{
+        font-family: 'ybBold';
+        font-size: 12px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+    .courses #head #see_more img{
+        height: 10px;
+    }
+    #courses{
+        z-index: 2;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .course_card{
+        margin: 10px 0;
+    }
+    #last_course #arrow{
+        width: 28px;
+    }
+    .python_course #content{
+        display: none;
+    }
+    .eitaa{
+        align-items: center;
+        text-align: center;
+        height: 12em;
+        border-radius: 3rem;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 300px;
+        width: 55%;
+        padding: 35 35px;
+        justify-content: space-between;
+    }
+    .eitaa h1{
+        margin-bottom: 6px;
+        font-size: 27px;
+    }
+    .eitaa a{
+        margin-right: 0;
+    }
+    .blog{
+        margin-bottom: 17rem;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+    .blog #header span h4{
+        font-size: 20px;
+    }
+    .blog #header span sub{
+        font-size: 10px;
+        width: 90%
+    }
+    .blog #header #btn{
+        margin-top: -95px;
+    }
+    .blog #header{
+        margin-right: 0.7em;
+    }
+    .blog_1{
+        display: none !important;
+    }
+    .blog #content #blog_card{
+        margin-top: -25em;
+    }
+    .blog #content{
+        transform: skew(0deg, 0deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 400px;
+        width: 100%;
+        border-radius: 12px;
+        margin-left: 0;
+        border:none;
+    }
+    .blog #content #blog_card:hover {
+        cursor: default;
+        opacity: 100%;
+        transform: translateY(-1rem);
+    }
+}
+@media screen and (min-width:851px , max-width:1330px) {
+    #courses:last-child{
+        display: none;
+    }
+}
+@media screen and (max-width:561px) {
+    header section h1{
+        font-size: 30px;
+    }
+    .swiper {
+        
+        border-radius: 2em;
+        width: 90% !important;
+        height: 230px !important;
+        margin-top: 80px;
+        background-color: red ;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .python_course{
+        margin-top: -665px;
+        flex-direction: column;
+    }
+    .python_course #header{
+        margin-right: 32px;
+        margin-top: 800px;
+    }
+    .python_course #header span sub{
+        letter-spacing: .15px;
+        line-height: 22px;
+        font-size: 11px;
+        width: 80%;
+    }
+    .python_course #header img{
+        height: 30px;
+    }
+    .python_course #header span h4{
+        font-size: 24px;
+    }
+
+}
+@media screen and (min-width: 840px) {
+    .python_course #header span sub{
+        margin-bottom: -52px !important;
+    }
+}
+@media screen and (min-width: 470px) {
+    .python_course #header span sub{
+        margin-bottom: 14px;
+    }
+}
+@media screen and (min-width: 312px) {
+    .python_course #header span sub{
+        margin-bottom: 55px;
+    }
+}
+@media screen and (max-width:311px) {
+    .python_course #header span sub{
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width:380px) {
+    nav #mode{
+        display: none;
+    }
+    nav .search{
+        width: 45%;
+        margin-left: 42px;
+    }
+    nav #hamber {
+        margin-left: -8px;
+        margin-right: 8px;
+    }
+    nav #nav_logo_small{
+        height: 48px !important;
     }
 }
