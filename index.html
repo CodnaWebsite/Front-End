@@ -1,0 +1,369 @@
+<!DOCTYPE html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کدنا - آکادمی برنامه نویسی</title>
+    <link rel="stylesheet" href="css/landing.rtl.css">
+
+    <link rel="shortcut icon" href="media/Pictures/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+<menu id="menu">
+    <a id="selected" href="#">
+        <iconify-icon icon="solar:home-2-broken" style="color: var(--primary-black);" width="20"></iconify-icon>
+        <h5>خانه</h5>
+    </a>
+    <a href="#">
+        <iconify-icon icon="solar:book-broken" style="color: var(--primary-black);" width="20"></iconify-icon>
+        <h5>دوره ها</h5>
+    </a>
+    <a href="#">
+        <iconify-icon icon="solar:pen-new-square-broken" style="color: var(--primary-black);" width="20"></iconify-icon>
+        <h5>وبلاگ</h5>
+    </a>
+    <a href="#">
+        <iconify-icon icon="solar:code-square-broken" style="color: var(--primary-black);" width="20"></iconify-icon>
+        <h5>فضای کدزنی</h5>
+    </a>
+    <a href="#">
+        <iconify-icon icon="solar:question-square-broken" style="color: var(--primary-black)" width="20"></iconify-icon>
+        <h5>درباره ما</h5>
+    </a>
+
+</menu>
+    <nav id="nav">
+        <!-- Hamburger -->
+        <iconify-icon id="hamber" class="hamburger-button" icon="icon-park-outline:hamburger-button" style="margin-right: -30px; color: white;z-index: 17;" width="30"></iconify-icon>
+        <!-- Logo -->
+        <img id="nav_logo" class="nav_logo" src="media/Pictures/logo_title.png" alt="logo" height="55px">
+
+        <!-- Search Bar -->
+        <form class="search" method="GET">
+            <input id="search" name="search" type="text" class="searchTerm" placeholder="دنبال چی میگردی؟">
+            <button id="searchBtn" type="submit" class="searchButton">
+                    <img src="media/Pictures/search.png">
+                </button>
+        </form>
+
+        <!-- Dark/Light Mode -->
+        <iconify-icon id="mode" icon="ion:invert-mode-sharp" style="color: rgb(29, 27, 33);" width="26"></iconify-icon>
+
+        <a href="#" id="login">ورود</a>
+
+        <a href="#" id="signUp">شروع یادگیری</a>
+
+    </nav>
+
+    <header>
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+        <section>
+            <h1>دنیای
+                <div id="typed-strings">
+                    <!-- <p>هک و امنیت<p> -->
+                    <p>هوش مصنوعی</p>  
+                    <p>هک و امنیت</p> 
+                </div>
+                <span id="typed" style="white-space:pre;"></span>
+                 
+                   رو<br> با <b>قدرت</b> شروع کن!</h1>
+            <sub>اینجا غیر ممکن ها ممکن میشه.</sub>
+
+            <a id="CTA" href="#" style="display:flex;">
+                <span>بزن بریم</span>
+                <img id="arrow" height="12px" src="media/Pictures/arrow.png" alt="arrow">
+            </a>
+        </section>
+
+    </header>
+
+
+    <main class="courses">
+        <span id="head">
+            <!-- Title of Header -->
+            <div id="last_course">
+                <iconify-icon id="arrow" icon="solar:book-bold" style="color: white;" width="45"></iconify-icon>
+                <h2>جدید ترین دوره ها</h2>
+            </div>
+
+            <!-- See more course -->
+            <a href="#" id="see_more">
+                <h3>دیدن همه</h3>
+                <img id="arrow" src="media/Pictures/arrow.png" alt="arrow">
+            </a>
+        </span>
+
+        <section id="courses">
+            <!-- Black Linux Course -->
+            <div class="course_card">
+                <img id="banner" src="media/Pictures/imgYp.jpg" alt="python course">
+                <a href="#" id="title">لینوکس سیاه</a>
+                <sub>تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد.</sub>
+                <section>
+                    <!-- button -->
+                    <a id="btn" href="#">
+                        <p>یادگیری</p>
+                        <img src="media/Pictures/arrow.png" alt="arrow">
+                    </a>
+                    <!-- price -->
+                    <span id="price"><b>12،000،000</b> تومان</span>
+                </section>
+            </div>
+            
+            <!-- Python Course -->
+            <div class="course_card special">
+                <img id="banner" src="media/Pictures/imgPy.png" alt="python course">
+                <a href="#" id="title">متخصص پایتون</a>
+                <sub>تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد.</sub>
+                
+                <section>
+                    <!-- button -->
+                    <a id="btn" href="#">
+                        <p>یادگیری</p>
+                        <img src="media/Pictures/arrow.png" alt="arrow">
+                    </a>
+                    <!-- price -->
+                    <span id="price"><b>2،000،000</b> تومان</span>
+                </section>
+            </div>
+            <!-- Networking With Security -->
+            <div class="course_card">
+                <img id="banner" src="media/Pictures/sho.jpg" alt="python course">
+                <a href="#" id="title">شبکه با گرایش امنیت</a>
+                <sub>تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد.</sub>
+                
+                <section>
+                    <!-- button -->
+                    <a id="btn" href="#">
+                        <p>یادگیری</p>
+                        <img src="media/Pictures/arrow.png" alt="arrow">
+                    </a>
+                    <!-- price -->
+                    <span id="price"><b>6،000،000</b> تومان</span>
+                </section>
+            </div>
+
+            <!-- Osint Course -->
+            <div class="course_card">
+                <img id="banner" src="media/Pictures/osinit.png" alt="python course">
+                <a href="#" id="title">اوسینت با دید مهندسی </a>
+                <sub>تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد.</sub>
+                
+                <section>
+                    <!-- inproduction -->
+                    <span id="inproduction">
+                        <p>درحال تولید</p> 
+                        <iconify-icon id="gear" icon="ph:gear-six-fill" style="color: #ffbe5b;" width="18"></iconify-icon>
+                    </span>
+                </section>
+            </div>
+        </section>
+
+        <section class="python_course">
+            <section id="header">
+
+                <img src="media/Pictures/Python.png" alt="python">
+
+                <span>
+                    <h4 dir="rtl">پایتون دیگه آب خوردنه!</h4>
+                    <sub dir="rtl">تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد. پس اگر دانشجو هستید و قصد دارید پروژه یا پایان‌نامه‌تونو تکمیل کنید، اگر به توسعه وب علاقه دارید یا در فیلد هوش مصنوعی فعال هستید، این دوره آموزش پایتون برای شماست.
+                        جالبه بدونید دنیای هک و امنیت هم رنگ‌وبوی زبان پایتون رو پیدا کرده و برای ورود به دنیای امنیت هم باید پایتون رو بلد باشید.</sub>
+               
+                        <a id="btn_special">بریم یاد بگیریم؟</a>
+                    </span>
+                
+            </section>
+
+            <section id="content">
+                <div id="special_course" class="course_card special">
+                    <img id="banner" src="media/Pictures/imgPy.png" alt="python course">
+                    <a href="#" id="specialTitle">متخصص پایتون</a>
+                    <sub>تقریبا همه می‌دونن که پایتون جزو پرچم‌داران زبان‌های برنامه‌نویسیه و بلدبودن اون می‌تونه یه نقطه قوت درست‌وحسابی توی حرفه شما به حساب بیاد.</sub>
+                    
+                    <section>
+                        <!-- button -->
+                        <a id="btn" href="#">
+                            <p>یادگیری</p>
+                            <img id="invertArrow" src="media/Pictures/arrow.png" alt="arrow">
+                        </a>
+                        <!-- price -->
+                        <span id="price"><b>2،000،000</b> تومان</span>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+        <!--   Blog section   -->
+    <section class="blog" dir="rtl">
+        <section id="header" dir="rtl">
+
+            <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="45" viewBox="0 0 24 24"><path fill="white" d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1ZM7 6v4h4V6H7Zm0 6v2h10v-2H7Zm0 4v2h10v-2H7Zm6-9v2h4V7h-4Z"/></svg>
+
+            <span>
+                <h4 dir="rtl">کلی مقاله کاربردی در وبلاگمون</h4>
+                <sub dir="rtl">با پیشرفت روز افزون تکنولوژی ، ضروریه که علم و دانش تو هروز بیشتر و بیشتر بشه.</sub>
+                <a id="btn" href="#">
+                    <p>بریم بخونیم</p>
+                    <img class="arrow" id="arrow" src="media/Pictures/arrow.png" alt="arrow">
+                </a>
+                </span>
+            
+        </section>
+
+        <section id="content">
+            <section class="blog_1" id="blog_card">
+                <img src="media/Pictures/osinit.png" alt="blog_img" id="banner">
+                <h2>اوسینت چه کاربردی دارد؟</h2>
+                <sub>لورم ایپسوم یک متن ساختگی است والا که نمیدانم.</sub>
+                <span id="bottom_components">
+                    <div id="category">
+                        <iconify-icon id="categoryIcon1" icon="solar:folder-broken" style="color: #00214a;" width="15"></iconify-icon>
+                         <p id="categoryText1" style="margin-right: 6px;margin-top: 14px;">هک و امنیت</p>
+                    </div>
+                    <div id="likes">
+                        <p>2</p>
+                        <iconify-icon icon="solar:heart-broken" style="color: red;" width="18"></iconify-icon>
+                    </div>
+                </span>
+            </section>
+            <section class="blog_2" id="blog_card">
+                <img src="media/Pictures/imgPy.png" alt="blog_img" id="banner">
+                <h2>اوسینت چه کاربردی دارد؟</h2>
+                <sub>لورم ایپسوم یک متن ساختگی است والا که نمیدانم.</sub>
+                <span id="bottom_components">
+                    <div id="category">
+                        <iconify-icon id="categoryIcon2" icon="solar:folder-broken" style="color: #00214a;" width="15"></iconify-icon>
+                         <p id="categoryText2" style="margin-right: 6px;margin-top: 14px;">هوش مصنوعی</p>
+                    </div>
+                    <div id="likes">
+                        <p>3</p>
+                        <iconify-icon icon="solar:heart-broken" style="color: red;" width="18"></iconify-icon>
+                    </div>
+                </span>
+            </section>
+
+        </section>
+        
+    </section>
+
+<section class="eitaaSec">
+        <!-- Eitaa -->
+        <div class="eitaa">
+            <h1>کلـی تخفیف و خبر جالب در کانال ایـتا</h1>
+            <a href="https://eitaa.com/codena">عضو شوید</a>
+        </div>    
+</section>
+
+    <footer>
+        <!-- eNamad -->
+        <a href="#"><img height="60px" src="media/Pictures/eNamad.png" alt="eNamad"></a>
+
+        <!-- Etehadie -->
+        <a href="#"><img height="60px" src="media/Pictures/etehadie.png" alt="Etehadieh-KasboKar-Keshvari"></a>
+
+        <!-- AboutUs -->
+        <a href="#">درباره ما</a>
+
+        <!-- Content Us -->
+        <a href="#">ارتباط با  ما</a>
+
+        <!-- Logo -->
+        <a href="#" id="logo"><img src="media/Pictures/logo.png" alt="logo"></a>
+    </footer>
+
+
+
+    <script>
+        // Python Course CTA
+        var certain = false;
+document.getElementById("btn_special").addEventListener("click", function(){
+    certain = !certain;
+    specialCourse(certain);
+});
+
+function specialCourse(isOn){
+    console.log(isOn);
+    const div = document.getElementById("special_course");
+    if(isOn == true){
+        div.style.boxShadow = "0 0 0 3px var(--primary-orange), 0 0px 60px rgba(255, 166, 0, 0.60)";
+    }else{
+        div.style.boxShadow = "0 0 0 3px var(--primary-orange), 0 16px 46px rgba(255, 166, 0, 0.27)";
+    }
+}
+
+// Nav.Menu
+var menuIs = false;
+var hamber = document.getElementById("hamber");
+hamber.addEventListener("click", function () {
+  menuIs = !menuIs;
+  menu(menuIs);
+});
+
+function menu(is) {
+  const menu = document.getElementById("menu");
+  if (is) {
+    hamber.icon = "iconamoon:close-duotone";
+    menu.style.display = "flex";
+    menu.style.animation = "fade 0.5s ease";
+    menu.style.opacity = "100%";
+    menuIs();
+  } else {
+    hamber.icon = "icon-park-outline:hamburger-button";
+    menu.style.display = "none";
+    menu.style.opacity = "0%";
+    menuIsNot();
+  }
+}
+
+function menuOpen() {
+  if (menuIs) {
+    hamber.icon = "iconamoon:close-duotone";
+    menu.style.opacity = "100%";
+  } else {
+    menu.style.opacity = "0%";
+    hamber.icon = "icon-park-outline:hamburger-button";
+  }
+}
+
+function menuIs() {
+  menuIs = true;
+}
+
+function menuIsNot() {
+  menuIs = false;
+}
+    </script>
+    <script src="js/mode.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/Typed.js"></script>
+</body>
+
+</html>
