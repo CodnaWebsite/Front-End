@@ -1,5 +1,3 @@
-/* Mobin Malek (c) */
-
 /* Default Settings */
 
 :root {
@@ -579,17 +577,16 @@ header section a:hover>#header_arrow {
 }
 
 .python_course #header span sub{
-    opacity: 70%;
+    opacity: 84%;
     color: var(--primary-white);
     font-family: 'ybLight';
     font-size: 15px;
     display: block;
-    text-align: start;
+    text-align: justify;
     width: 75%;
     margin-top: 1em;
     letter-spacing: .75px;
     line-height: 25px;
-    height: 160px;
 }
 .python_course #header span a{
     color: var(--primary-white);
@@ -962,13 +959,12 @@ footer #logo img{
         flex-direction: column;
     }
     
-    .swiper {
-        
-        border-radius: 2em;
-        width: 80% !important;
-        height: 280px !important;
-        margin-top: 80px;
-        background-color: red ;
+    .slider_placeholder {
+        background: red;
+        height: 350px;
+        width: 600px;
+        margin: 60px 0 0 60px;
+        border-radius: 20px;
     }
     header section{
         margin: 0;
@@ -1050,10 +1046,10 @@ footer #logo img{
         margin-top: 7rem;
     }
     .blog #header span h4{
-        font-size: 20px;
+        font-size: 26px;
     }
     .blog #header span sub{
-        font-size: 10px;
+        font-size: 14px;
         width: 90%
     }
     .blog #header #btn{
@@ -1094,8 +1090,8 @@ footer #logo img{
     header section h1{
         font-size: 30px;
     }
-    .swiper {
-        
+    .slider_placeholder {
+
         border-radius: 2em;
         width: 90% !important;
         height: 230px !important;
@@ -1114,9 +1110,10 @@ footer #logo img{
     }
     .python_course #header span sub{
         letter-spacing: .15px;
-        line-height: 22px;
-        font-size: 11px;
-        width: 80%;
+        line-height: 28px;
+        font-size: 14px;
+        width: 83%;
+        opacity: 92%;
     }
     .python_course #header img{
         height: 30px;
@@ -1125,10 +1122,13 @@ footer #logo img{
         font-size: 24px;
     }
 
+    .python_course #content{
+        display: none;
+    }
 }
 @media screen and (min-width: 840px) {
     .python_course #header span sub{
-        margin-bottom: -52px !important;
+        margin-bottom: 26px !important;
     }
 }
 @media screen and (min-width: 470px) {
@@ -1160,5 +1160,20 @@ footer #logo img{
     }
     nav #nav_logo_small{
         height: 48px !important;
+    }
+}
+@media screen and (max-width:1110px) {
+    .blog_1{
+        display: none !important;
+    }
+}
+@media screen and (max-width:670px) {
+    .eitaa{
+        width: 9em;
+        height: 9em;
+        border-radius: 26% / 90%;
+    }
+    .eitaa h1{
+        font-size: 18px !important;
     }
 }
