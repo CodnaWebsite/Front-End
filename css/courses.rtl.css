@@ -37,7 +37,7 @@ body {
     font-family: ybBold;
     padding: 0 0;
     margin: 0;
-    background-color: var(--primary-black);
+    background-color: #e4e4e4;
 }
 ::-webkit-scrollbar{
     width: 4px;
@@ -238,13 +238,14 @@ nav #nav_logo_small{
     }
 }
 main{
+
     margin-top: 7em;
     width: 90%;
     border-radius: 12px;
-    height: 120em;
+    height: fit-content;
     padding: 26px;
-    background-color: #c9c9c9;
-    box-shadow: 0px 15px 32px #c4c4c4;
+    background-color: #eeeff0;
+    box-shadow: 0px 15px 32px #b9b9b9;
 }
 main #header{
     display: flex;
@@ -299,9 +300,190 @@ main #header span a p{
     margin-top: 20px;
 }
 main #desc{
+
     text-align: justify;
     margin-top: 55px;
     font-family: ybLight;
     color: #292935;
     line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main #desc p{
+    margin-bottom: -70px;
+}
+#more{
+    display:none;
+}
+#read_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background: linear-gradient(360deg, #eeeff0,#eeeff0, #e1e1e100);
+}
+#read_more p{
+    transition:all 0.4s ease;
+    width:6em;
+    border: 1px solid #292935;
+    color: #292935;
+    border-radius: 16em;
+    padding: 5px 16px;
+}
+#read_more p:hover{
+    color: var(--primary-blue);
+    cursor: pointer;
+    border: 1px solid var(--primary-blue);
+}
+/* SEASONS */
+main #season{
+    flex-direction: column;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+main #season #title{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main #season #title h2{
+    font-family: 'ybFat';
+    color: #292935;
+    margin-top: 37px;
+    margin-right: -36px;
+    font-size: 38px;
+}
+main #season #content{
+    width: 60%;
+    margin-top: 2.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+main #season #content h3{
+    margin-right: 5em;
+    margin-bottom: 22px;
+    border-radius: 18px;
+    box-shadow: 0px 12px 22px #29293548;
+    width: 70%;
+    padding: 16px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 21px;
+    flex-direction: row-reverse;
+    background-color: #292935;
+    color: #d1d1d1;
+}
+main #season #content li{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main #season #content li iconify-icon{
+    border-radius: 18px;
+    padding: 19px;
+    border: 1px solid #292935;
+    margin-left: -4em;
+    background: none;
+}
+
+.details #teacher{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 22px;
+    padding: 40px 6px;
+    background: none;
+    width: 17em;
+    border: 1px solid #7a7a7a;
+    height: 17em;
+}
+.details #teacher img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 56px;
+    border-radius: 100%;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.3);
+}
+.details #teacher h3{
+    color: #292935;
+    font-family: 'ybFat';
+    font-size: 28px;
+    margin-top: -37px;
+    margin-bottom: 10px;
+}
+.details{
+    width: 94%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.details #cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #7a7a7a;
+    border-radius: 18px;
+    height: 22em;
+    width: 75%;
+    margin-left: 1em;
+}
+.details #cta #price{
+    display: flex;
+    margin-top: -101px;
+    width: 58%;
+    margin-bottom: -90px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.details #cta #price sub{
+    font-family: 'ybFat';
+    font-size: 8em;
+    color: #292935;
+    text-shadow: 3px 3px #0291ff;
+}
+.details #cta #price p{
+    font-family: 'ybLight';
+    font-weight: 100;
+    margin-top: 62px;
+}
+
+.details #cta a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: rgb(255 255 255 / 0%);
+    width: 99px;
+    padding: 0px 22%;
+    border-radius: 18px;
+    border: 1px solid #0291ff;
+    font-family: 'ybBold';
+    font-weight: 100;
+    color: #0291ff;
+}
+.details #cta a p {
+margin-top: 18px;
+}
+.details #cta h5{
+    margin-top: 0em;
+    font-size: 15px;
+    margin-bottom: 26px;
 }

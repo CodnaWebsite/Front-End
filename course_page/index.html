@@ -81,11 +81,60 @@
                    <span id="more">ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.ورم ایپسوم یک متن ساختگی است که برای صنعت چاپ و متون به کار برده میشود.</span>
                    
                     </p>
+                    <span onclick="readMore()" id="read_more">
+                        <p id="readMoreText">
+                            بیشتر بخوانید
+                        </p> 
+                    </span>
                 </section>
             </section>
 
+            <section id="season">
+                <span id="title">
+                    <h2>
+                        سر فصل های دوره
+                    </h2>
 
+                    <iconify-icon width="33" icon="solar:info-square-broken" style="color: #4880ab;"></iconify-icon>
+                </span>
+
+                    <ol dir="rtl" id="content">
+
+                        <li>
+                            <iconify-icon icon="solar:folder-favourite-bookmark-broken" style="color: #292935;" width="22"></iconify-icon>
+                            <h3>آشنایی با پایتون</h3>
+                        </li>
+
+                        <li>
+                            <iconify-icon icon="solar:folder-favourite-bookmark-broken" style="color: #292935;" width="22"></iconify-icon>
+                            <h3>یادگیری سینتکس ها</h3>
+                        </li>
+
+                        <li>
+                            <iconify-icon icon="solar:folder-favourite-bookmark-broken" style="color: #292935;" width="22"></iconify-icon>
+                            <h3>گزاره های شرطی</h3>
+                        </li>
+                    </ol>
+            </section>
         </main>
+        <section class="details">
+
+            <section id="teacher">
+                <img src="../media/Pictures/imgPy.png" alt="Teacher's Profile">
+                <h3 id="name">محمد حمزه</h3>
+                <sub id="desc">اول کار لورم ایپسوم یک متن ساختگی با هدف تولید محتوا برای پلیس هولدر ها در زمینه گرافیک<sub>
+            </section>
+            <!----------------->
+            <section id="cta">
+                <h5>قیمت</h5>
+                <h3 id="price"><sub>120،000</sub> <p>تومــــــــان</p></h3>
+                <a href="#">
+                    <p>خرید دوره</p>
+                    <iconify-icon icon="solar:alt-arrow-left-bold" style="color: #0291ff;" width="24"></iconify-icon>
+                </a>
+            </section>
+
+        </section>
 
 
 
@@ -95,6 +144,7 @@
 
 
 
+<br><br><br>
 
 
 
@@ -140,6 +190,29 @@
             function menuIsNot() {
               menuIs = false;
             }
+
+            // ReadMore
+
+            function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var readmore = document.getElementById("readMoreText");
+  let bg = document.getElementById("read_more");
+  if (dots.style.display === "none") {
+
+    dots.style.display = "inline";
+    readmore.innerHTML = "بیشتر بخوانید"; 
+    moreText.style.display = "none";
+    bg.style.background = "linear-gradient(360deg, #eeeff0,#eeeff0, #e1e1e100)";
+}
+   else
+{
+    bg.style.background = "none";
+    dots.style.display = "none";
+    readmore.innerHTML = "کمتر بخوانید"; 
+    moreText.style.display = "inline";
+  }
+}
             </script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <script src="../js/mode.course.js"></script>
